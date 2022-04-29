@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+    <link rel="stylesheet" type="text/css" href='style.css'>
+    
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+    
+
+<!-- Bootstrap core CSS -->
+<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+
+
+	<!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42242964-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-42242964-1');
+  </script>
+
+  <!-- Regular data -->
+      <meta charset="utf-8">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  
+  <!-- Description -->
+  <meta name="author" content="Nilesh Shinde"/>
+  <meta name="description" content="My personal portfolio."/>
+  <meta name="keywords"  content=""/>
+  <meta name="Resource-type" content="Document"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  
+
+
+
+  
+=
+  <!-- Lazy load -->
+  <!-- Yall: Remove the no-js class on the <html> element if JavaScript is on -->
+  <script>document.documentElement.classList.remove("no-js")</script>
+
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42242964-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-42242964-1');
+</script>
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://dejan.works/img/favicon-16x16.png" type="image/png" sizes="16x16">  
+<link rel="icon" href="https://dejan.works/img/favicon-32x32.png" type="image/png" sizes="32x32">  
+<link rel="icon" href="https://dejan.works/img/favicon-96x96.png" type="image/png" sizes="96x96"> 
+
+
+<!-- Toggle button mobile -->		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+      $(".mobile-tap-area").click(function(){
+          $(".toggle-mobile-first").toggle();
+          $(".toggle-mobile-second").toggle();
+      });
+  });
+</script>
+
+<Style>
+
+@font-face {
+	font-family: 'Regular';
+	src: url('../fonts/Graphik-Regular.eot');
+	src: url('../fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Graphik-Regular.woff') format('woff'),
+		url('../fonts/Graphik-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Semibold';
+	src: url('../fonts/Graphik-Semibold.eot');
+	src: url('../fonts/Graphik-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Graphik-Semibold.woff') format('woff'),
+		url('../fonts/Graphik-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Medium';
+	src: url('../fonts/Graphik-Medium.eot');
+	src: url('../fonts/Graphik-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Graphik-Medium.woff') format('woff'),
+		url('../fonts/Graphik-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding:0;
+    margin:0;
+	font-size: calc(1em + 1vw);
+}
+
+/*	=====================================================================
+									GENERAL							
+	===================================================================== */
+
+::selection {
+  color: rgba(255,255,255,.99);
+  background: rgba(0,0,0,.99);
+}
+::-moz-selection {
+  color: rgba(255,255,255,.99);
+  background: rgba(0,0,0,.99);
+}
+
+/* ------ Backgrounds ------ */
+.website-background-black {
+	background: #000000;
+}
+.website-background-white {
+	background: #ffffff;
+}
+
+/* ------ Colors ------ */
+.text-color-white {
+	color: #ffffff;
+}
+.text-color-red {
+	color: #680fea;
+}
+.text-color-black {
+	color: #000000;
+}
+.text-color-gray {
+	color: #888888;
+}
+
+/* ------ Text styles ------ */
+.underline {
+	text-decoration: underline;
+}
+
+.hide-text-block {
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+h1 {
+	font-family:'Semibold';
+	position: fixed;
+	line-height: 110%;
+	letter-spacing: -2px;
+    font-size: 3.2em; /* general fallback */
+    font-size: 18vm; /* IE9 fallback */
+/*     font-size: 19vmin; */
+    font-size: 18vmin;
+
+}
+		@media screen and (max-width: 767px) {
+			h1 {
+			line-height: 130%;
+			}
+		}
+		
+h2 {
+	font-family:'Semibold';
+	line-height: 140%;
+	font-size: 100px;
+    font-size: 2.222em;
+}
+
+h3 {
+	font-family:'Medium';
+	line-height: 120%;
+	font-size: 64px;
+	/* font-size: 1.780em; */
+}
+
+h4 {
+	font-family:'Semibold';	
+	line-height: 140%;
+	font-size: 48px;
+	font-size: 40px;
+	margin: 16vh 0 4vh 0;
+	margin: 24vh 0 4vh 0;
+}
+		@media screen and (max-width: 767px) {
+			h4 {
+			font-size: 30px;
+			}
+		}
+h5 {
+	font-family:'Semibold';
+	line-height: 140%;
+	font-size: 36px;
+	font-size: 30px;
+	margin: 12vh 0 5vh 0;
+	margin: 12vh 0 3vh 0;
+	
+
+}
+		@media screen and (max-width: 767px) {
+			h5 {
+				font-size: 20px;
+			}
+		}
+h6 {
+	font-family: "Semibold";
+	line-height: 140%;
+	font-size: 24px;
+	margin: 8vh 0 2vh 0;	
+}	
+
+
+/* ------ paragraph styling ------ */
+
+p {
+	line-height: 170%;
+	font-family:'Regular';
+	font-size: 18px;
+	margin-bottom: 3vh;
+}
+
+p.size-small {
+	font-family: "Medium";
+	font-size: 16px;
+	margin-bottom: 0;
+}
+		@media screen and (max-width: 767px) {
+			p.size-small {
+			font-size: 14px;
+			}
+		}
+		
+.size-medium {
+	line-height: 180%;
+	font-size: 20px;
+}
+
+.size-large {
+	line-height: 160%;
+	font-size: 24px;
+	margin-bottom: 4vh;
+}
+
+b {
+	font-family: "Medium";
+}
+
+i {
+	font-style:italic;
+}
+
+
+/* ------ List ------ */
+ul {
+	line-height: 180%;
+	font-family:'Regular';
+	font-size: 18px;
+	margin-bottom: 5vh;
+}
+
+li {
+	margin-left: 3vh;
+}
+
+
+blockquote {
+	line-height: 170%;
+	font-family:'Regular';
+	font-size: 18px;
+/* 	font-style:italic; */
+	color: #666666;
+	margin: 6vmin 0;
+	padding: 10px 20px 10px 30px;
+	border-left:4px solid #dddddd;
+}
+
+
+
+/* ------ Links ------ */
+a, a:after, a:visited {
+	text-decoration: none;
+	cursor: pointer;
+	color: #000000;	
+}
+
+
+a.text-color-white, a.text-color-white:after, a.text-color-white:visited {
+	color: #ffffff;	
+}
+
+a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
+	color: #7d0fea;
+}
+
+/* ------ Hover states ------ */
+.on-hover-40, .on-hover--40 {
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.on-hover-40:hover {
+	margin-left: 40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+.on-hover--40:hover {
+	margin-left: -40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+		@media screen and (max-width: 767px) {
+			.on-hover-40:hover {
+				margin-left: 0px;	
+			}
+			.on-hover--40:hover {
+				margin-left: 0px;
+			}	
+		}
+
+/* ------ Media ------ */
+img {
+    max-width: 100%;
+    max-height: 100%;
+	pointer-events: none !important;
+}
+video {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* ------ Hide .lazy elements if JavaScript is off ------ */
+.no-js .lazy {
+  display: none;
+}
+
+/* ------ Grid ------ */
+.top-bottom-margin {
+	margin: 40vh 0 20vh 0;
+	margin: 35vh 0 20vh 0;
+	margin: 35vh 0 30vh 0;
+} 
+
+.max-width {
+	max-width: 68%;
+	max-width: 21.5em;
+	margin: 0 auto;
+}
+		@media screen and (max-width: 767px) {
+			.max-width {
+				max-width: 100%;
+				max-width: 86%;
+			}
+		}
+
+/* ------ Logo ------ */
+.logo {
+	float: right;
+}
+.logo-inner {
+	position: fixed;
+	top: 10%;
+	z-index: 999;
+}
+		@media screen and (max-width: 767px) {
+			.logo-inner {
+				top: 5%;
+				left: 75%;
+			}
+		}
+.label-logo:after { 
+	font-family:"Semibold";
+	font-size: 20px;
+    content:"dejan.";
+}
+.label-logo:hover:after{
+	content:"dejan.works";
+	white-space: nowrap;
+}
+		@media screen and (max-width: 767px) {
+			.label-logo:hover:after{
+				content:"dejan.";
+			}
+		}
+.label-logo{
+	-webkit-animation:fadelogo .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-moz-animation:fadelogo .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:fadelogo .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;	
+}
+@-webkit-keyframes fadelogo {
+	0% {-webkit-transform: translateY(10vh);}
+	100% {-webkit-transform: translateY(0vh);}	
+}
+@keyframes fadelogo {
+	0% {opacity: 0;transform: translateY(10vh);}
+	100% {opacity: 1;transform: translateY(0vh);}	
+}
+
+/* ------ Reading position ------ */
+.rpi-progress-bar{
+	box-sizing:border-box;
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
+	padding-bottom:20px;
+	z-index: 1;
+}
+.rpi-progress-bar__position{
+	box-sizing:inherit;
+	height:4px; /* control the height of the progress bar */
+	width:100%;
+	background-color: #D1001D;
+	-webkit-transform-origin:0 50%;
+	transform-origin:0 50%;
+	-webkit-transition:-webkit-transform 50ms;
+	transition:-webkit-transform 50ms;
+	transition:transform 50ms;
+	transition:transform 50ms,-webkit-transform 50ms;
+	-webkit-transform:scaleX(0);
+	transform:scaleX(0);
+	will-change:transform;
+	position:relative;
+}
+
+
+
+
+/*	=====================================================================
+									HOMEPAGE							
+	===================================================================== */
+
+
+.vertical-center {
+	position: absolute;
+	height: 100%;
+	display: -webkit-flex; /* Safari */
+	display: flex;  
+	-webkit-align-items: center; /* Safari */
+	align-items:   center;
+}
+
+.label-hello:after{
+    content:"Hello.";
+}
+.label-hello:hover:after{
+	content:"About";
+}
+.label-iam:after{
+    content:"I am";
+}
+.label-iam:hover:after{
+	content:"Projects";
+}
+.label-dejan:after{
+    content:"Nilesh";
+}
+.label-dejan:hover:after{
+	content:"Contact";
+}
+.label-error:after{
+	content:"Oops!";
+}
+.label-error:hover:after{
+	content:"Home";
+}
+
+.animate {
+	-webkit-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-moz-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+
+
+@-webkit-keyframes animate {
+	0% {opacity: 0;-webkit-transform: translateY(100%);}
+	100% {opacity: 1;-webkit-transform: translateY(0%);}	
+}
+
+@keyframes animate {
+	0% {opacity: 0;transform: translateY(30vh);} /* WORK ON THISSS! */
+/* 	0% {transform: translateY(100%);} */
+	100% {opacity: 1;transform: translateY(0%);}	
+}
+
+/* ------ Delays ------ */
+.delay02 { -webkit-animation-delay: .2s; animation-delay: .2s;}
+.delay04 { -webkit-animation-delay: .4s; animation-delay: .4s;}
+.delay06 { -webkit-animation-delay: .6s; animation-delay: .6s;}
+.delay08 { -webkit-animation-delay: .8s; animation-delay: .8s;}
+.delay10 { -webkit-animation-delay: 1s; animation-delay: 1s;}
+.delay12 { -webkit-animation-delay: 1.2s; animation-delay: 1.2s;}
+
+/* ------ Background photo ------ */
+.bg-photo {	
+	z-index: -9;
+position: fixed;
+top: 80px;
+right: 0px;
+bottom: 0;
+left: 49%;
+
+	background-repeat: no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	 background-size: cover;
+	
+	-webkit-animation:bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);
+	-moz-animation:bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);
+	animation:bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);	
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+	@media screen and (max-width: 767px) {
+		.bg-photo {
+		-webkit-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+		-moz-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+		animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);		
+		}
+	}
+@-webkit-keyframes bg-photo {
+	0% {opacity: 0;transform: scale(1.1);}
+	100% {opacity: 1;transform: scale(1);}	
+}
+
+@keyframes bg-photo {
+	0% {opacity: 0;transform: scale(1.1);}
+	100% {opacity: 1;transform: scale(1);}	
+}
+		@media screen and (max-width:480px) {
+			.bg-photo {
+				left: -4%;
+top: 67px;
+			}	
+		}
+
+
+/*	=====================================================================
+							HOMEPAGE MOBILE							
+	===================================================================== */
+
+
+@media screen and (min-width: 768px) {
+	.hide-mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.hide-web {
+		display: none;
+	}
+	.toggle-mobile-second {
+		display: none;
+	}
+	.mobile-tap-area {
+		background: transparent;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.tap-indication {
+	    text-align: center;
+		width: 100%;
+		font-family:"Medium";
+		color: #ffffff;
+		position: fixed;
+		bottom: 4%;
+		font-size: 0.6em; /* general fallback */
+	    font-size: 3.6vm; /* IE9 fallback */
+	    font-size: 3.6vmin;
+		animation: bounce 1s infinite alternate;
+		
+		-webkit-animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;
+		-moz-animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;
+		animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;	
+	}
+	@keyframes bounce {
+	  from {
+	    transform: translateY(0px);
+	  }
+	  to {
+	    transform: translateY(-8px);
+	  }
+	}
+	@-webkit-keyframes bounce {
+	  from {
+	    transform: translateY(0px);
+	  }
+	  to {
+	    transform: translateY(-8px);
+	  }
+	}
+}
+
+
+/*	=====================================================================
+							ABOUT AND CONTACT					
+	===================================================================== */
+
+.max-width-left-70 {	
+	max-width: 70%;
+}
+		@media screen and (max-width: 767px) {
+			.max-width-left-70 {	
+				max-width: 100%;
+			}
+		}
+
+
+/* ------ Copy email to clipboard ------ */
+.label-email {
+	cursor: pointer;
+}
+.label-email:after{
+    content:"nilshinde74@gmail.com";
+}
+.label-email:hover:after{
+	content:"Copy to clipboard";
+}
+.label-email:hover:active:after {
+    content:"Email copied";
+}
+		@media screen and (max-width: 767px) {
+			.label-email:hover:after{
+				content:"Copied to clipboard";
+			}
+		}
+
+
+
+/*	=====================================================================
+								WORK LIST							
+	===================================================================== */
+
+.work-block {
+	margin: 12vh 0;
+}
+
+		@media screen and (max-width: 767px) {
+			.work-block {
+				margin-top: 10vh 0;
+			}
+		}
+
+/*	=====================================================================
+								PROJECT PAGE							
+	===================================================================== */
+
+
+.block-image-overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.hero-image {
+	width: 100vw;
+	height: 90vh;
+	overflow: hidden;
+	margin: 30vh 0;
+}
+		@media screen and (max-width: 767px) {
+			.hero-image {
+				margin: 20vh 0;
+			}	
+		}	
+.hero-image img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+		@media screen and (max-width: 767px) {
+			.hero-image img {
+				background-position: right bottom;
+			}	
+		}	
+
+.max-width-70 {	
+	max-width: 70%;
+	margin: 0 auto;
+}
+		@media screen and (max-width: 767px) {
+			.max-width-70 {	
+				max-width: 100%;
+				margin: auto;
+			}
+		}
+
+
+.links a {
+	display: block;
+	margin: 4vh 0;
+	font-family: "Medium";
+	font-size: 19px;	
+}
+
+
+
+.images {
+	margin: 8vh 0;
+}
+	@media screen and (max-width: 767px) {
+		.images {
+			margin: 4vh 0;
+		}
+	}
+
+.images img {
+	margin: 4vh 0;
+}
+	@media screen and (max-width: 767px) {
+		.images img {
+			margin: 2vh 0;
+		}
+	}
+
+
+
+
+/* ================================================================== */
+
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link {
+    color: #000;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(10, 7, 17, 0.55);
+}
+
+.rounded {
+    border-radius: 8.25rem !important;
+}
+
+
+.offcanvas-end {
+    top: 0;
+    right: 0;
+    width: 285px;
+    border-left: 13px solid rgba(0,0,0,.2);
+    transform: translateX(100%);
+}
+
+.offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: 1045;
+    display: flex;
+    flex-direction: column;
+    max-width: 81%;
+    visibility: hidden;
+    background-color: #e1e5ead9;
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform .3s ease-in-out;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 73%;
+    border-block-color: blue;
+   
+}
+
+.max-width {
+    max-width: 68%;
+    max-width: 23.5em;
+    margin: 0 auto;
+}
+
+</style>
+
+
+
+    
+
+<title>Nilesh Shinde</title>
+  </head>
+  <body class="website-background-black">	
+  <body data-new-gr-c-s-check-loaded="14.1036.0" data-gr-ext-installed="">
+  <body data-new-gr-c-s-check-loaded="14.1036.0" data-gr-ext-installed="">
+    
+<header>
+  <div class="d-flex flex-column">
+
+    
+  <nav class="navbar  navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Nilesh Shinde</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <img src="nuketrans.png" class="img-fluid rounded" alt="...">
+
+        
+      
+        <div class="offcanvas-body">
+         
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+             
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+           
+              </ul>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+  </div>
+</header>
+
+
+<div class="hide-mobile mobile-tap-area">
+	<div class="max-width">
+		<div class="vertical-center">
+			<h1>
+				<div class="text-color-white hide-text-block">
+					<div class="animate toggle-mobile-first">Hello.</div>
+				</div>
+				<div class="text-color-red hide-text-block">
+					<div class="animate delay04 toggle-mobile-first">I am</div>
+				</div>
+				<div class="text-color-red hide-text-block">
+					<div class="animate delay08 toggle-mobile-first">Nilesh</div>
+				</div>
+			</h1>
+		</div>
+	</div>
+	<div class="tap-indication">Tap anywhere</div>
+</div>
+
+<div class="max-width">
+	<div class="vertical-center">
+		<h1>
+			<div class="hide-text-block">
+				<a href="about.html">
+					<div class="animate text-color-white on-hover-40 hide-web label-hello "></div>
+					<div class="animate text-color-white on-hover-40 hide-mobile toggle-mobile-second">About</div>
+				</a>
+			</div>
+			<div class="hide-text-block">
+				<a href="projects.html">
+					<div class="animate text-color-red on-hover-40 delay04 hide-web label-iam"></div>
+					<div class="animate text-color-red on-hover-40 delay04 hide-mobile toggle-mobile-second">projects</div>
+				</a>
+			</div>
+			<div class="hide-text-block">
+				<a href="contact.html">
+					<div class="animate text-color-red on-hover-40 delay08 hide-web label-dejan"></div>
+					<div class="animate text-color-red on-hover-40 delay08 hide-mobile toggle-mobile-second">Contact</div>
+				</a>
+			</div>
+		</h1>
+<div>
+	<img src="nukebwt2.jpeg" class="img-fluid bg-photo main-img" alt="...">
+</div>
+<script src="index.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
